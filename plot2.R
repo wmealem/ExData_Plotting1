@@ -29,7 +29,7 @@ url <- "http://d396qusza40orc.cloudfront.net/exdata%2Fdata%2Fhousehold_power_con
 zipfile_name <- "data.zip"
 datafile_name <- "household_power_consumption.txt"
 
-print("plot1.png generator running...")
+print("plot2.png generator running...")
 
 # Has the data file been downloaded and unzipped yet? If not, do so...
 if (!file.exists(datafile_name)) {
