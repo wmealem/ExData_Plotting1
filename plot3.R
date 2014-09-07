@@ -56,6 +56,7 @@ cleaned_data <- GAP_data %>%
     filter((DateTime >= ymd("2007-02-01")) & (DateTime <= ymd("2007-02-03"))) %>% 
     mutate(SB1=as.numeric(SB1), SB2=as.numeric(SB2), SB3=as.numeric(SB3)) %>%
     group_by(Day_of_week = lubridate::wday(DateTime, label=TRUE, abbr=FALSE))
+
 print("creating plot...")
 png(filename="plot3.png", width=480, height=480)
 with(cleaned_data, {
