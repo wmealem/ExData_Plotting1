@@ -70,7 +70,7 @@ with(cleaned_data, {
     lines(DateTime, SB1)
     lines(DateTime, SB2, col="red")
     lines(DateTime, SB3, col="blue")
-    legend("topright", c("Sub_metering_1", "Sub_metering_2", "Sub_metering_3"), bty="n", lty=c(1,1), col=c("black", "red", "blue"))
+    legend("topright", c("Sub_metering_1", "Sub_metering_2", "Sub_metering_3"), bty="n", lty=c(1,1), col=c("black", "red", "blue"), cex=0.95)
     plot(DateTime, GRP, type="l", xlab="datetime", ylab="Global_reactive_power")
 })
 
