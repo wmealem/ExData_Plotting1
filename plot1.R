@@ -58,7 +58,7 @@ cleaned_data <- GAP_data %>%
 
 rm(GAP_data) #don't need it any more
 print("saving plot...")
-png(filename="plot%d.png", width=480, height=480)
+png(filename="plot1.png", width=480, height=480)
 with(cleaned_data,
      hist(Global_active_power,
           main="Global Active Power",
