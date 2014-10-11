@@ -2,7 +2,7 @@
 #
 # Author:  M. Ealem
 #
-# Date:    Sun Sep  7 07:12:33 PDT 2014
+# Date:    Sat Oct 11 09:02:30 PDT 2014
 #
 # Purpose: Produces a line plot of energy sub metering in
 #          kilowatts versus day of the week (Thurs, Friday, Saturday)
@@ -67,6 +67,6 @@ with(cleaned_data, {
     legend("topright", c("Sub_metering_1", "Sub_metering_2", "Sub_metering_3"), lty=c(1,1), col=c("black", "red", "blue"))
 })
 
-
-dev.null <- dev.off()
+# save png...
+dev.off()
 print("Done!")
