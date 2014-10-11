@@ -2,7 +2,7 @@
 #
 # Author:  M. Ealem
 #
-# Date:    Sat Sep  6 18:03:19 PDT 2014
+# Date:    Sat Oct 11 08:55:10 PDT 2014
 #
 # Purpose: Produces a line plot of Global Active Power in
 #          kilowatts versus day of the week (Thurs, Friday, Saturday)
@@ -61,6 +61,6 @@ png(filename="plot2.png", width=480, height=480)
 with(cleaned_data,
     plot(DateTime, GAP, type="l", ylab = "Global Active Power (kilowatts)", xlab=""))
 
-
-dev.null <- dev.off()
+# now save the png file...
+dev.off()
 print("Done!")
