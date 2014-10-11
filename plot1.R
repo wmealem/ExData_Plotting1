@@ -2,7 +2,7 @@
 #
 # Author:  M. Ealem
 #
-# Date:    Sat Sep  6 11:53:13 PDT 2014
+# Date:    Sat Oct 11 08:48:36 PDT 2014
 #
 # Purpose: Produces a histogram plot of Global Active Power in
 #          kilowatts and saves it as "plot1.png." Assumes datafile
@@ -63,10 +63,8 @@ with(cleaned_data,
      hist(Global_active_power,
           main="Global Active Power",
           xlab="Global Active Power (kilowatts)",
-          col=rgb(255,37,0, maxColorValue=255))) # color obtained from sampling web image
-                                                 # and converting to local color profile
-dev.null <- dev.off()
+          # color obtained from sampling web image
+          # and converting to local color profile
+          col=rgb(255,37,0, maxColorValue=255))) 
+dev.off()
 print("Done!")
-
-
-
